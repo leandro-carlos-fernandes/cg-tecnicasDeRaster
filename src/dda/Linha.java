@@ -62,7 +62,8 @@ public class Linha {
 	}
 	
 	/**
-	 * 
+	 * Método que desenha cada um dos pontos do segmento de reta no elemento
+	 * gráfico empregando o algoritmo incremental. 
 	 * @param x0,y0 coordenadas do ponto inicial do segmento.
 	 * @param x1,y1 coordenadas do ponto final do segmento.
 	 * @param g elemento gráfico onde serão desenhados os pontos da primitiva.
