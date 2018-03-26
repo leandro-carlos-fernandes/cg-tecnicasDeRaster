@@ -15,39 +15,76 @@ import basics.Ponto;
  */
 public class Linha {
 
-	private Ponto inicio, fim;
-	private Color cor;
+	private Ponto inicio, fim;	// pontos de inicio e fim do segmento de reta
+	private Color cor;			// cor do segmento
 
+	/**
+	 * Construtor padrão.
+	 * Cria uma nova linha com início e fim na origem, na cor vermelha (padrão).
+	 */
 	public Linha() {
 		this(new Ponto(), new Ponto(), Color.RED);
 	}
 
+	/**
+	 * Cria uma nova linha com extremidades nos pontos informados, na cor padrão.
+	 * @param inicio ponto de início do segmento.
+	 * @param fim ponto de término do segmento.
+	 */
+	public Linha(Ponto inicio, Ponto fim) {
+		this(inicio, fim, Color.RED);
+	}
+	
 	public Linha(Ponto inicio, Ponto fim, Color cor) {
 		this.inicio = inicio;
 		this.fim = fim;
 		this.cor = cor;
 	}
 
+	/**
+	 * Recupera o ponto de início do segmento de reta.
+	 * @return ponto de início.
+	 */
 	public Ponto getPontoDeInicio() {
 		return inicio;
 	}
 
+	/**
+	 * Define o ponto de início para o segmento de reta.
+	 * @param p ponto de início.
+	 */
 	public void setPontoDeInicio(Ponto p) {
 		this.inicio = p;
 	}
 
+	/**
+	 * Recupera o ponto de término do segmento de reta.
+	 * @return ponto de término.
+	 */
 	public Ponto getPontoDeFim() {
 		return fim;
 	}
 
+	/**
+	 * Define o ponto de término para o segmento de reta.
+	 * @param p ponto de término.
+	 */
 	public void setPontoDeFim(Ponto p) {
 		this.fim = p;
 	}
 	
+	/**
+	 * Recupera a cor do segmento de reta.
+	 * @return cor da linha.
+	 */
 	public Color getCor() {
 		return cor;
 	}
 
+	/**
+	 * Define a cor do segmento de reta.
+	 * @param cor valor correspondente a cor da linha.
+	 */
 	public void setCor(Color cor) {
 		this.cor = cor;
 	}

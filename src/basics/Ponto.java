@@ -79,7 +79,7 @@ public class Ponto {
 	 */
 	public void draw(Graphics g){
 		g.setColor(cor);
-		g.drawLine(x,y,x,y);
+		g.fillRect(x*10, y*10, 10, 10);
 	}
 	
 }
